@@ -1,0 +1,14 @@
+//syntax = "proto2";
+option java_package = "caverspark.serial.protobuf";
+option java_outer_classname = "SubscribeReqProto";
+
+message SubscribeReq{
+
+//required 必须的字段
+//1 2 3 4表示字段序号
+//repeated string : 表示string数组
+    required int32 subReqID = 1;
+    required string userName = 2;
+    required string productName = 3;
+    repeated string address = 4;
+}
